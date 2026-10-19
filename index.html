@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Dompet Elsa</title>
+  <meta name="description" content="Catatan uang saku santri Pondok Pesantren Anak Soleh El Salim">
+  <meta name="theme-color" content="#8b0f3a">
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" href="logo-96.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Masuk -->
+  <main id="layar-masuk" class="masuk" hidden>
+    <div class="masuk-kartu">
+      <img src="logo-192.png" alt="Logo Pondok Pesantren Anak Soleh El Salim" width="112" height="112">
+      <h1>Dompet Elsa</h1>
+      <p class="sub">Uang saku santri Pondok Pesantren Anak Soleh El Salim</p>
+      <form id="form-masuk" autocomplete="off">
+        <label for="kode">Kode akses</label>
+        <input id="kode" name="kode" inputmode="text" autocapitalize="characters" spellcheck="false" placeholder="XXXX-XXXX" required>
+        <button class="btn utama lebar" type="submit">Masuk</button>
+        <p class="pesan" id="pesan-masuk" role="alert"></p>
+      </form>
+      <p class="catatan">Kode akses diberikan oleh wali asuh atau pimpinan pondok.</p>
+    </div>
+  </main>
+
+  <!-- Aplikasi -->
+  <div id="layar-app" hidden>
+    <header class="atas">
+      <img src="logo-96.png" alt="" width="36" height="36">
+      <div class="atas-judul">
+        <strong>Dompet Elsa</strong>
+        <span id="peran-label"></span>
+      </div>
+      <button class="btn tipis" id="btn-keluar" type="button">Keluar</button>
+    </header>
+    <main class="isi" id="isi"></main>
+  </div>
+
+  <dialog id="dialog"><form method="dialog" id="dialog-isi"></form></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
