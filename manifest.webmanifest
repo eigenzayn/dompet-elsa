@@ -1,0 +1,13 @@
+{
+  "name": "Dompet Elsa",
+  "short_name": "Dompet Elsa",
+  "description": "Uang saku santri Pondok Pesantren Anak Soleh El Salim",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#faf7f2",
+  "theme_color": "#8b0f3a",
+  "icons": [
+    { "src": "logo-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "logo-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
